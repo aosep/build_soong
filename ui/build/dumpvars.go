@@ -88,7 +88,7 @@ func dumpMakeVars(ctx Context, config Config, goals, vars []string, write_soong_
 var BannerVars = []string{
 	"PLATFORM_VERSION_CODENAME",
 	"PLATFORM_VERSION",
-	"VALIDUS_VERSION",
+	"aosep_VERSION",
 	"TARGET_PRODUCT",
 	"TARGET_BUILD_VARIANT",
 	"TARGET_BUILD_TYPE",
@@ -139,7 +139,7 @@ func Banner(make_vars map[string]string) string {
 	fmt.Fprintf(b, "%s=%s\n", "HOST_CROSS_ARCH", make_vars["HOST_CROSS_ARCH"])
 	fmt.Fprintf(b, "%s=%s\n", "HOST_CROSS_2ND_ARCH", make_vars["HOST_CROSS_2ND_ARCH"])
 	fmt.Fprintln(b, "=============================================================")
-	fmt.Fprintf(b, "%s=%s\n", "VALIDUS_VERSION", make_vars["VALIDUS_VERSION"])
+	fmt.Fprintf(b, "%s=%s\n", "aosep_VERSION", make_vars["aosep_VERSION"])
 	fmt.Fprintf(b, "%s=%s\n", "BUILD_ID", make_vars["BUILD_ID"])
 	fmt.Fprintf(b, "%s=%s\n", "OUT_DIR", make_vars["OUT_DIR"])
 	fmt.Fprintln(b, "=============================================================")
