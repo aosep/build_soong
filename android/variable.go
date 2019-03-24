@@ -118,7 +118,7 @@ type variableProperties struct {
 		}
 
 		// include Validus variables
-		aosep android.Product_variables
+		 validus android.Product_variables
 	} `android:"arch_variant"`
 }
 
